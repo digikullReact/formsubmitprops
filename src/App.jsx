@@ -4,13 +4,15 @@ import './App.css'
 import Header from './components/Header'
 import Login from './components/Login'
 import Home from './components/Home'
+import Lifecycle from './components/Lifecycle'
+import Api from './components/Api'
 
 function App() {
-  const [data, setData] = useState({})
+  const [data, setData] = useState(true)
 
 
   const getData=(obj)=>{
-    setData(obj);
+    setData(false);
 
   }
 
@@ -21,7 +23,14 @@ function App() {
   <div class="row">
   <Header/>
 <div class="col-md-6 offset-3">
-    <Login  getData={getData}/>
+  {/**
+   *   <Login  getData={getData}/>
+   */}
+
+{/**<Lifecycle/> */}
+  
+  <Api/>
+
     </div>
    
   </div>
@@ -29,9 +38,7 @@ function App() {
 
   <div class="row">
 
-<div class="col-md-6 offset-3">
-   <Home data={data}/>
-    </div>
+
    
   </div>
 
