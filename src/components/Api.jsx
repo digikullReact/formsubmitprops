@@ -19,7 +19,12 @@ useEffect(function(){
             {
            state.map(ele=>(
 
-            <li>{ele.title}</li>
+            <li>{ele.title} <br/>  
+            
+            {ele.description} <br/> 
+            
+            <img src={ele.urlToImage} width="100px" height="100px"/>
+             </li>
 
            ))
 
