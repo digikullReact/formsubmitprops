@@ -6,6 +6,7 @@ import Login from './components/Login'
 import Home from './components/Home'
 import Lifecycle from './components/Lifecycle'
 import Api from './components/Api'
+import Tip from './components/Tip'
 
 function App() {
   const [data, setData] = useState(true)
@@ -27,9 +28,9 @@ function App() {
    *   <Login  getData={getData}/>
    */}
 
-{/**<Lifecycle/> */}
+{/**<Lifecycle/>    <Api/>*/}
   
-  <Api/>
+<Tip/>
 
     </div>
    
